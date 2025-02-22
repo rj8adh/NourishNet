@@ -21,6 +21,8 @@ def api_request(url: str):
 
     return [response][0]
 
+
+# Get all recipes with the given ingredients
 def get_recipes(ingredients: list = [], loadIngredients: bool = False):
     # Convert list to comma-separated string
     if not loadIngredients:
@@ -68,6 +70,7 @@ def get_recipes(ingredients: list = [], loadIngredients: bool = False):
     return recipes
 
 
+# Get the details such as instructions for each recipe
 def get_recipe_details(recipe: dict):
     try:
         url = f"https://api.spoonacular.com/recipes/{recipe['id']}/analyzedInstructions?apiKey={API_KEY}"
@@ -79,6 +82,7 @@ def get_recipe_details(recipe: dict):
     if not os.path.exists("recipeDetails.json") or os.stat("recipeDetails.json").st_size == 0:
         recipeInfo = []
 
+    # Load recipeDetails if it contains stuff
     else:
         with open("recipeDetails.json", "r") as f:
             recipeInfo = json.load(f) 
@@ -94,6 +98,39 @@ def get_recipe_details(recipe: dict):
     f.close()
 
     return recipeInfo
+
+
+def get_equip_for_recip(recipe: list):
+    
+    # Used a set so I don't get duplicates
+    neededEquipment = set()
+
+    # Looping through each step and getting needed equipment
+    for info in recipe:
+        steps = info['steps']
+        for step in steps:
+            for equipment in step['equipment']:
+                # Adding items to set
+                neededEquipment.add(equipment['name'])
+
+    # Converting a set to a list seperated by commas (you could just use the list() function but I wanted to flex my list comprehensions)
+    return ", ".join([equipment for equipment in neededEquipment]).strip(", ")
+
+
+def get_steps(recipe: list):
+
+    stepsString = ""
+
+    # Looping and adding all Steps to final output
+    for detail in recipe:
+        stepsData = detail['steps']
+        for step_num, step in enumerate(stepsData, 1):
+            stepsString += f"Step {step_num}: {step['step']}\n"
+
+    # Removing last whitespace
+    stepsString = stepsString.strip()
+
+    return stepsString
     
 
 # Get and format user input
@@ -110,19 +147,12 @@ f.close()
 
 # recipeDetails = get_recipe_details(recipe) # Commented out so I don't waste api tokens
 
-neededEquipment = {} # Did a dictionary so no repeats
-
 for recipeIndex, recipe in enumerate(recipeDetails):
     print(f"\n\n{recipes[recipeIndex]['title']} Instructions:\n\n")
-    for info in recipe:
-        steps = info['steps']
-        # print(steps, "\n\n\n")
+    
+    print(get_steps(recipe))
 
-        for step in steps:
-            print(step['step'])
-            for equipment in step['equipment']:
-                neededEquipment[equipment['name']] = 0
+    neededEquipment = get_equip_for_recip(recipe)
 
     print(f"\n\nNEEDED EQUIPMENT FOR RECIPE:\n\n")
-    for item in neededEquipment:
-        print(item)
+    print(neededEquipment)
