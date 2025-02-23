@@ -12,6 +12,8 @@ const FoodBankLocator = () => {
 
   const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 
+  console.log("Google API Key:", GOOGLE_API_KEY);
+
   const findFoodBanks = async () => {
     if (!zip.trim()) {
       setError("Please enter a valid zip code.");
