@@ -103,7 +103,6 @@ def get_equip_for_recip(recipe: list):
     neededEquipment = set()
 
     # Looping through each step and getting needed equipment
-    print(recipe)
     for info in recipe:
         print(f"\n\nINFO\n\n{info}")
         steps = info['steps']
@@ -113,7 +112,7 @@ def get_equip_for_recip(recipe: list):
                 neededEquipment.add(equipment['name'])
 
     # Converting a set to a list seperated by commas (you could just use the list() function but I wanted to flex my list comprehensions)
-    return ", ".join([equipment for equipment in neededEquipment])
+    return list(neededEquipment)
 
 
 def get_steps(recipe: list):
@@ -157,6 +156,8 @@ def testFuncInConsole():
         print(f"\n\nNEEDED EQUIPMENT FOR RECIPE:\n\n")
         print(neededEquipment)
 
+
+# Default api call with nothing, just loads previous data from json files
 @app.get("/")
 def testFuncWithStoredFiles():
 
@@ -193,11 +194,11 @@ def giveIngredients(ingredients: str):
 @app.get("/getNecessaryEquipment")
 def get_necessary_equipment():
     finalOutput = []
-    with open("recipes.json") as f:
-        recipesInfo = json.load(f)
+    with open("recipeDetails.json") as f:
+        specificRecipes = json.load(f)
     f.close()
 
-    for recip in recipesInfo:
+    for recip in specificRecipes:
         finalOutput.append(get_equip_for_recip(recip))
 
     return finalOutput
@@ -221,5 +222,18 @@ def get_missing_ingredients():
             neededIngredients.append(ingredient['original'])
 
         finalOutput.append(neededIngredients)
+
+    return finalOutput
+
+
+@app.get("/getIngredientSteps")
+def getIngredientSteps():
+    finalOutput = []
+    with open("recipeDetails.json") as f:
+        allRecipes = json.load(f)
+    f.close()
+
+    for recip in allRecipes:
+        finalOutput.append(get_steps(recip))
 
     return finalOutput
