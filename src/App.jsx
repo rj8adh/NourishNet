@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Chatbot from "./Chatbot";
 import FoodBankLocator from "./FoodBankLocator";
-import IngredientInput from "./IngredientInput"; // Import new component
+import IngredientInput from "./IngredientInput";
+import RecipeDetail from './RecipeDetail';
+import Results from './Results';
 import "./App.css";
 
 function Home() {
@@ -34,11 +36,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/chatbot" element={<Chatbot />} />
-        <Route path="/foodbanks" element={<FoodBankLocator />} />
-        <Route path="/ingredients" element={<IngredientInput />} />
-      </Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/foodbanks" element={<FoodBankLocator />} />
+          <Route path="/ingredients" element={<IngredientInput />} />
+          <Route path="/recipe/:recipeId" element={<RecipeDetail />} />
+          <Route path="/results" element={<Results />} />
+        </Routes>
     </Router>
   );
 }

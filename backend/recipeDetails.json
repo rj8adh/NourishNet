@@ -5,32 +5,37 @@
             "steps": [
                 {
                     "number": 1,
-                    "step": "Preheat oven to 400",
-                    "ingredients": [],
-                    "equipment": [
-                        {
-                            "id": 404784,
-                            "name": "oven",
-                            "localizedName": "oven",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-                        }
-                    ]
-                },
-                {
-                    "number": 2,
-                    "step": "Place the onion and apple in a large bowl.",
+                    "step": "Combine all seasonings in a small bowl, reserving half of the rosemary. Baste the chicken with unsalted butter and olive oil and then cover with seasonings.",
                     "ingredients": [
                         {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
+                            "id": 1145,
+                            "name": "unsalted butter",
+                            "localizedName": "unsalted butter",
+                            "image": "butter-sliced.jpg"
                         },
                         {
-                            "id": 11282,
-                            "name": "onion",
-                            "localizedName": "onion",
-                            "image": "brown-onion.png"
+                            "id": 1042027,
+                            "name": "seasoning",
+                            "localizedName": "seasoning",
+                            "image": "seasoning.png"
+                        },
+                        {
+                            "id": 4053,
+                            "name": "olive oil",
+                            "localizedName": "olive oil",
+                            "image": "olive-oil.jpg"
+                        },
+                        {
+                            "id": 2036,
+                            "name": "rosemary",
+                            "localizedName": "rosemary",
+                            "image": "rosemary.jpg"
+                        },
+                        {
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
                         }
                     ],
                     "equipment": [
@@ -43,193 +48,122 @@
                     ]
                 },
                 {
-                    "number": 3,
-                    "step": "Add sugar, cinnamon, cloves, ginger, chili pepper flakes, salt and 2 cloves of garlic. Toss to coat.",
+                    "number": 2,
+                    "step": "Add half of the onion, lemons, and rosemary to the inner cavity of the chicken.",
                     "ingredients": [
                         {
-                            "id": 11819,
-                            "name": "chili pepper",
-                            "localizedName": "chili pepper",
-                            "image": "red-chili.jpg"
+                            "id": 2036,
+                            "name": "rosemary",
+                            "localizedName": "rosemary",
+                            "image": "rosemary.jpg"
                         },
                         {
-                            "id": 2010,
-                            "name": "cinnamon",
-                            "localizedName": "cinnamon",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg"
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
                         },
                         {
-                            "id": 1002011,
-                            "name": "clove",
-                            "localizedName": "clove",
-                            "image": "cloves.jpg"
+                            "id": 9150,
+                            "name": "lemon",
+                            "localizedName": "lemon",
+                            "image": "lemon.png"
                         },
                         {
-                            "id": 11215,
-                            "name": "garlic",
-                            "localizedName": "garlic",
-                            "image": "garlic.png"
-                        },
-                        {
-                            "id": 11216,
-                            "name": "ginger",
-                            "localizedName": "ginger",
-                            "image": "ginger.png"
-                        },
-                        {
-                            "id": 19335,
-                            "name": "sugar",
-                            "localizedName": "sugar",
-                            "image": "sugar-in-bowl.png"
-                        },
-                        {
-                            "id": 2047,
-                            "name": "salt",
-                            "localizedName": "salt",
-                            "image": "salt.jpg"
+                            "id": 11282,
+                            "name": "onion",
+                            "localizedName": "onion",
+                            "image": "brown-onion.png"
                         }
                     ],
                     "equipment": []
                 },
                 {
-                    "number": 4,
-                    "step": "Melt butter and 1 tbsp olive oil in a large skillet over medium high heat.",
+                    "number": 3,
+                    "step": "Roll up three small lemon-sized balls of foil and place in the bottom of the slow cooker.",
                     "ingredients": [
                         {
-                            "id": 4053,
-                            "name": "olive oil",
-                            "localizedName": "olive oil",
-                            "image": "olive-oil.jpg"
+                            "id": 9150,
+                            "name": "lemon",
+                            "localizedName": "lemon",
+                            "image": "lemon.png"
                         },
                         {
-                            "id": 1001,
-                            "name": "butter",
-                            "localizedName": "butter",
-                            "image": "butter-sliced.jpg"
+                            "id": 0,
+                            "name": "roll",
+                            "localizedName": "roll",
+                            "image": "dinner-yeast-rolls.jpg"
                         }
                     ],
                     "equipment": [
                         {
-                            "id": 404645,
-                            "name": "frying pan",
-                            "localizedName": "frying pan",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
+                            "id": 404718,
+                            "name": "slow cooker",
+                            "localizedName": "slow cooker",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
+                        },
+                        {
+                            "id": 404765,
+                            "name": "aluminum foil",
+                            "localizedName": "aluminum foil",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/aluminum-foil.png"
+                        }
+                    ]
+                },
+                {
+                    "number": 4,
+                    "step": "Place half of lemons and onion with water into the bottom of the slow cooker.",
+                    "ingredients": [
+                        {
+                            "id": 9150,
+                            "name": "lemon",
+                            "localizedName": "lemon",
+                            "image": "lemon.png"
+                        },
+                        {
+                            "id": 11282,
+                            "name": "onion",
+                            "localizedName": "onion",
+                            "image": "brown-onion.png"
+                        },
+                        {
+                            "id": 14412,
+                            "name": "water",
+                            "localizedName": "water",
+                            "image": "water.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404718,
+                            "name": "slow cooker",
+                            "localizedName": "slow cooker",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
                         }
                     ]
                 },
                 {
                     "number": 5,
-                    "step": "Add apple and onion mixture and saut until the apples are tender. About five minutes.",
+                    "step": "Add remaining rosemary to the top of the chicken.Cover and cook on low for 7-8 hours, or high for 4-5 hours.",
                     "ingredients": [
                         {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
+                            "id": 2036,
+                            "name": "rosemary",
+                            "localizedName": "rosemary",
+                            "image": "rosemary.jpg"
                         },
                         {
-                            "id": 11282,
-                            "name": "onion",
-                            "localizedName": "onion",
-                            "image": "brown-onion.png"
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
                         }
                     ],
                     "equipment": [],
                     "length": {
-                        "number": 5,
+                        "number": 780,
                         "unit": "minutes"
                     }
-                },
-                {
-                    "number": 6,
-                    "step": "Remove from heat and set aside.",
-                    "ingredients": [],
-                    "equipment": []
-                },
-                {
-                    "number": 7,
-                    "step": "Brush the pitas with the rest of the olive oil and sprinkle with the remainder of the garlic.",
-                    "ingredients": [
-                        {
-                            "id": 4053,
-                            "name": "olive oil",
-                            "localizedName": "olive oil",
-                            "image": "olive-oil.jpg"
-                        },
-                        {
-                            "id": 11215,
-                            "name": "garlic",
-                            "localizedName": "garlic",
-                            "image": "garlic.png"
-                        },
-                        {
-                            "id": 18413,
-                            "name": "pita",
-                            "localizedName": "pita",
-                            "image": "pita-bread.jpg"
-                        }
-                    ],
-                    "equipment": []
-                },
-                {
-                    "number": 8,
-                    "step": "Top pitas with apples and onions and sprinkle with cheese and bacon.",
-                    "ingredients": [
-                        {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
-                        },
-                        {
-                            "id": 1041009,
-                            "name": "cheese",
-                            "localizedName": "cheese",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/cheddar-cheese.png"
-                        },
-                        {
-                            "id": 11282,
-                            "name": "onion",
-                            "localizedName": "onion",
-                            "image": "brown-onion.png"
-                        },
-                        {
-                            "id": 10123,
-                            "name": "bacon",
-                            "localizedName": "bacon",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/raw-bacon.png"
-                        },
-                        {
-                            "id": 18413,
-                            "name": "pita",
-                            "localizedName": "pita",
-                            "image": "pita-bread.jpg"
-                        }
-                    ],
-                    "equipment": []
-                },
-                {
-                    "number": 9,
-                    "step": "Bake in the oven for five minutes then turn the oven to broil (keeping a close eye on them) for 1-2 minutes.",
-                    "ingredients": [],
-                    "equipment": [
-                        {
-                            "id": 404784,
-                            "name": "oven",
-                            "localizedName": "oven",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-                        }
-                    ],
-                    "length": {
-                        "number": 7,
-                        "unit": "minutes"
-                    }
-                },
-                {
-                    "number": 10,
-                    "step": "Slice into quarters and serve.",
-                    "ingredients": [],
-                    "equipment": []
                 }
             ]
         }
@@ -240,13 +174,43 @@
             "steps": [
                 {
                     "number": 1,
-                    "step": "In a food processor, pulse 1 1/2 cups of the flour with the salt.",
+                    "step": "For the brine, combine the water, salt, sugar, half of the dried herbs and bay leaves into a large saucepan.  Bring the mixture to a boil, stirring to dissolve the salt and sugar.  Reduce to heat to low and simmer for 10 min so the flavors of the herbs can be drawn out.",
                     "ingredients": [
                         {
-                            "id": 20081,
-                            "name": "all purpose flour",
-                            "localizedName": "all purpose flour",
-                            "image": "flour.png"
+                            "id": 1022042,
+                            "name": "dried herbs",
+                            "localizedName": "dried herbs",
+                            "image": "dried-herbs.png"
+                        },
+                        {
+                            "id": 2004,
+                            "name": "bay leaves",
+                            "localizedName": "bay leaves",
+                            "image": "bay-leaves.jpg"
+                        },
+                        {
+                            "id": 93798,
+                            "name": "brine",
+                            "localizedName": "brine",
+                            "image": ""
+                        },
+                        {
+                            "id": 1002044,
+                            "name": "herbs",
+                            "localizedName": "herbs",
+                            "image": "mixed-fresh-herbs.jpg"
+                        },
+                        {
+                            "id": 19335,
+                            "name": "sugar",
+                            "localizedName": "sugar",
+                            "image": "sugar-in-bowl.png"
+                        },
+                        {
+                            "id": 14412,
+                            "name": "water",
+                            "localizedName": "water",
+                            "image": "water.png"
                         },
                         {
                             "id": 2047,
@@ -257,142 +221,44 @@
                     ],
                     "equipment": [
                         {
-                            "id": 404771,
-                            "name": "food processor",
-                            "localizedName": "food processor",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/food-processor.png"
+                            "id": 404669,
+                            "name": "sauce pan",
+                            "localizedName": "sauce pan",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
                         }
-                    ]
+                    ],
+                    "length": {
+                        "number": 10,
+                        "unit": "minutes"
+                    }
                 },
                 {
                     "number": 2,
-                    "step": "Add the cold butter and process just until the butter is the size of peas, about 5 seconds.",
+                    "step": "Pour the brine into a deep set large bowl and cool it down with your ice water.  Set aside.Clean the chicken by rinsing out the cavity and outer skin and place on a clean surface.  Be sure not to contaminate any vegetables or other ingredients, because no one is a fan of salmonella!",
                     "ingredients": [
                         {
-                            "id": 1001,
-                            "name": "butter",
-                            "localizedName": "butter",
-                            "image": "butter-sliced.jpg"
+                            "id": 11583,
+                            "name": "vegetable",
+                            "localizedName": "vegetable",
+                            "image": "mixed-vegetables.png"
                         },
-                        {
-                            "id": 11304,
-                            "name": "peas",
-                            "localizedName": "peas",
-                            "image": "peas.jpg"
-                        }
-                    ],
-                    "equipment": []
-                },
-                {
-                    "number": 3,
-                    "step": "Sprinkle the ice water over the mixture and process just until moistened, about 5 seconds.",
-                    "ingredients": [
                         {
                             "id": 14412,
                             "name": "water",
                             "localizedName": "water",
                             "image": "water.png"
-                        }
-                    ],
-                    "equipment": []
-                },
-                {
-                    "number": 4,
-                    "step": "Transfer the dough to a lightly floured work surface and knead 2 or 3 times, just until it comes together. Pat the dough into a disk. On a lightly floured work surface, roll out the dough into a 16- to 17-inch round about 1/4 inch thick.",
-                    "ingredients": [
-                        {
-                            "id": 0,
-                            "name": "dough",
-                            "localizedName": "dough",
-                            "image": "pizza-dough"
                         },
                         {
                             "id": 0,
-                            "name": "roll",
-                            "localizedName": "roll",
-                            "image": "dinner-yeast-rolls.jpg"
-                        }
-                    ],
-                    "equipment": []
-                },
-                {
-                    "number": 5,
-                    "step": "Line a large baking sheet with parchment paper.",
-                    "ingredients": [],
-                    "equipment": [
-                        {
-                            "id": 404770,
-                            "name": "baking paper",
-                            "localizedName": "baking paper",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/baking-paper.jpg"
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
                         },
                         {
-                            "id": 404727,
-                            "name": "baking sheet",
-                            "localizedName": "baking sheet",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/baking-sheet.jpg"
-                        }
-                    ]
-                },
-                {
-                    "number": 6,
-                    "step": "Roll the dough around the rolling pin and unroll it onto the prepared baking sheet.",
-                    "ingredients": [
-                        {
-                            "id": 0,
-                            "name": "dough",
-                            "localizedName": "dough",
-                            "image": "pizza-dough"
-                        },
-                        {
-                            "id": 0,
-                            "name": "roll",
-                            "localizedName": "roll",
-                            "image": "dinner-yeast-rolls.jpg"
-                        }
-                    ],
-                    "equipment": [
-                        {
-                            "id": 404727,
-                            "name": "baking sheet",
-                            "localizedName": "baking sheet",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/baking-sheet.jpg"
-                        },
-                        {
-                            "id": 404746,
-                            "name": "rolling pin",
-                            "localizedName": "rolling pin",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/rolling-pin.jpg"
-                        }
-                    ]
-                },
-                {
-                    "number": 7,
-                    "step": "In a small bowl, combine 2 tablespoons of the sugar with the remaining 1 tablespoon of flour and sprinkle over the dough. Arrange the apple slices on top in overlapping concentric circles to within 3 inches of the edge. Fold the dough over the apples in a free-form fashion.",
-                    "ingredients": [
-                        {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
-                        },
-                        {
-                            "id": 0,
-                            "name": "dough",
-                            "localizedName": "dough",
-                            "image": "pizza-dough"
-                        },
-                        {
-                            "id": 20081,
-                            "name": "all purpose flour",
-                            "localizedName": "all purpose flour",
-                            "image": "flour.png"
-                        },
-                        {
-                            "id": 19335,
-                            "name": "sugar",
-                            "localizedName": "sugar",
-                            "image": "sugar-in-bowl.png"
+                            "id": 93798,
+                            "name": "brine",
+                            "localizedName": "brine",
+                            "image": ""
                         }
                     ],
                     "equipment": [
@@ -405,67 +271,19 @@
                     ]
                 },
                 {
-                    "number": 8,
-                    "step": "Brush the apples with the melted butter and sprinkle with the remaining 1 1/2 tablespoons of sugar and cinnamon. Refrigerate the unbaked tart until slightly chilled, about 10 minutes.",
+                    "number": 3,
+                    "step": "Place the chicken in the brine,  make sure it is completely immersed in the brine.  Cover and allow to marinate for at least an hour and up to 6 hours.Preheat the oven to 375F.",
                     "ingredients": [
-                        {
-                            "id": 2010,
-                            "name": "cinnamon",
-                            "localizedName": "cinnamon",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg"
-                        },
-                        {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
-                        },
-                        {
-                            "id": 1001,
-                            "name": "butter",
-                            "localizedName": "butter",
-                            "image": "butter-sliced.jpg"
-                        },
-                        {
-                            "id": 19335,
-                            "name": "sugar",
-                            "localizedName": "sugar",
-                            "image": "sugar-in-bowl.png"
-                        }
-                    ],
-                    "equipment": [],
-                    "length": {
-                        "number": 10,
-                        "unit": "minutes"
-                    }
-                },
-                {
-                    "number": 9,
-                    "step": "Preheat the oven to 40",
-                    "ingredients": [],
-                    "equipment": [
-                        {
-                            "id": 404784,
-                            "name": "oven",
-                            "localizedName": "oven",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
-                        }
-                    ]
-                },
-                {
-                    "number": 10,
-                    "step": "Bake the tart in the center of the oven for 1 hour, or until the apples are tender and golden and the crust is deep golden and cooked through.",
-                    "ingredients": [
-                        {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
-                        },
                         {
                             "id": 0,
-                            "name": "crust",
-                            "localizedName": "crust",
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
+                        },
+                        {
+                            "id": 93798,
+                            "name": "brine",
+                            "localizedName": "brine",
                             "image": ""
                         }
                     ],
@@ -474,39 +292,149 @@
                             "id": 404784,
                             "name": "oven",
                             "localizedName": "oven",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg",
+                            "temperature": {
+                                "number": 375.0,
+                                "unit": "Fahrenheit"
+                            }
                         }
                     ],
                     "length": {
-                        "number": 60,
+                        "number": 360,
                         "unit": "minutes"
                     }
                 },
                 {
-                    "number": 11,
-                    "step": "Brush the apples with the melted preserves. Slide the parchment onto a wire rack and let the tart cool slightly before serving.",
+                    "number": 4,
+                    "step": "Remove the chicken from the brine and place on a clean surface.  Pat the chicken dry with a paper towel as shown.  Separate the skin from the flesh, you can do this by carefully inserting your fingers underneath the skin and gently pull up to create a space or pocket.  Take the butter and rub it underneath the skin and flesh  this will make your chicken moist and tender while accentuating the flavor of the herbs in the meat.  Coat the skin with te remaining herbs and place in a roasting pan, if more herbs are needed just add more.",
                     "ingredients": [
                         {
-                            "id": 19297,
-                            "name": "preserves",
-                            "localizedName": "preserves",
-                            "image": "strawberry-jam.png"
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
                         },
                         {
-                            "id": 9003,
-                            "name": "apple",
-                            "localizedName": "apple",
-                            "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg"
+                            "id": 1001,
+                            "name": "butter",
+                            "localizedName": "butter",
+                            "image": "butter-sliced.jpg"
+                        },
+                        {
+                            "id": 93798,
+                            "name": "brine",
+                            "localizedName": "brine",
+                            "image": ""
+                        },
+                        {
+                            "id": 1002044,
+                            "name": "herbs",
+                            "localizedName": "herbs",
+                            "image": "mixed-fresh-herbs.jpg"
+                        },
+                        {
+                            "id": 1065062,
+                            "name": "meat",
+                            "localizedName": "meat",
+                            "image": "whole-chicken.jpg"
+                        },
+                        {
+                            "id": 1012034,
+                            "name": "dry seasoning rub",
+                            "localizedName": "dry seasoning rub",
+                            "image": "seasoning.png"
                         }
                     ],
                     "equipment": [
                         {
-                            "id": 405900,
-                            "name": "wire rack",
-                            "localizedName": "wire rack",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/wire-rack.jpg"
+                            "id": 404629,
+                            "name": "roasting pan",
+                            "localizedName": "roasting pan",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/roasting-pan.jpg"
+                        },
+                        {
+                            "id": 405895,
+                            "name": "paper towels",
+                            "localizedName": "paper towels",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/paper-towels.jpg"
                         }
                     ]
+                },
+                {
+                    "number": 5,
+                    "step": "Bake the chicken for about 1 hour and 10 minutes, basting the chicken half way through and again during the last 10 minutes.  To test the doneness of your chicken, insert a meat thermometer into the thickest part of the breast, it should read 165F.  If you do not own a thermometer, cut into the chicken and if it releases pink juices it is undercooked.  Your chicken is done when the juices are a clear yellow.",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
+                        },
+                        {
+                            "id": 1065062,
+                            "name": "meat",
+                            "localizedName": "meat",
+                            "image": "whole-chicken.jpg"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404789,
+                            "name": "kitchen thermometer",
+                            "localizedName": "kitchen thermometer",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/food-thermometer.jpg"
+                        },
+                        {
+                            "id": 404784,
+                            "name": "oven",
+                            "localizedName": "oven",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg",
+                            "temperature": {
+                                "number": 165.0,
+                                "unit": "Fahrenheit"
+                            }
+                        }
+                    ],
+                    "length": {
+                        "number": 80,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 6,
+                    "step": "Transfer the chicken to a carving board and allow it to rest for 10-20 minutes.  This allows the juices to settle into the meat so it does not end up running out all over the board.  To serve, begin carving the legs it is easiest to cut at the joints.",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
+                        },
+                        {
+                            "id": 1065062,
+                            "name": "meat",
+                            "localizedName": "meat",
+                            "image": "whole-chicken.jpg"
+                        }
+                    ],
+                    "equipment": [],
+                    "length": {
+                        "number": 20,
+                        "unit": "minutes"
+                    }
+                },
+                {
+                    "number": 7,
+                    "step": "Remove the wings and then the legs and thighs the same way.  To carve each breast, start at the breabone and cut downward and parallel to the rib cage.  Then make a deep horizontal cut right above the thigh and wing joints.  You can choose to serve the breasts whole or cut them into thin slices.",
+                    "ingredients": [
+                        {
+                            "id": 5100,
+                            "name": "chicken wings",
+                            "localizedName": "chicken wings",
+                            "image": "chicken-wings.png"
+                        }
+                    ],
+                    "equipment": []
                 }
             ]
         }

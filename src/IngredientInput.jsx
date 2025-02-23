@@ -1,36 +1,58 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./IngredientInput.css"; // Import the CSS file
+import "./IngredientInput.css";
 
 const IngredientInput = () => {
   const [ingredient, setIngredient] = useState("");
   const [ingredients, setIngredients] = useState(
     JSON.parse(localStorage.getItem("ingredients")) || []
   );
-  const navigate = useNavigate(); // Hook to navigate
+  const navigate = useNavigate();
 
-  // Add ingredient
   const addIngredient = () => {
     if (ingredient.trim()) {
       const updatedIngredients = [...ingredients, ingredient.trim()];
       setIngredients(updatedIngredients);
       localStorage.setItem("ingredients", JSON.stringify(updatedIngredients));
-      setIngredient(""); // Clear input
+      setIngredient("");
     }
   };
 
-  // Remove ingredient
   const removeIngredient = (index) => {
     const updatedIngredients = ingredients.filter((_, i) => i !== index);
     setIngredients(updatedIngredients);
     localStorage.setItem("ingredients", JSON.stringify(updatedIngredients));
   };
 
+  const handleSubmit = async () => {
+    console.log("handleSubmit called");
+    const ingredientsString = ingredients.join("&");
+
+    try {
+      const response = await fetch("/giveIngredients", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ingredients: ingredientsString }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      navigate("/results", { state: { recipes: data } });
+    } catch (error) {
+      console.error("Error sending ingredients:", error);
+      // Handle error display to the user
+    }
+  };
+
   return (
     <div className="ingredient-container">
       <h2>Enter Ingredients</h2>
 
-      {/* Input Field and Add Button */}
       <div className="input-group">
         <input
           type="text"
@@ -41,19 +63,27 @@ const IngredientInput = () => {
         <button onClick={addIngredient}>Add</button>
       </div>
 
-      {/* Ingredient List */}
       <div className="ingredient-list">
         {ingredients.map((item, index) => (
           <div key={index} className="ingredient-item">
             {item}
-            <button className="remove-button" onClick={() => removeIngredient(index)}>×</button>
+            <button className="remove-button" onClick={() => removeIngredient(index)}>
+              ×
+            </button>
           </div>
         ))}
       </div>
 
-      {/* Back to Home Button */}
       <div className="button-container">
-        <button className="back-button" onClick={() => navigate("/")}>Back to Home</button>
+        <button className="submit-button" onClick={handleSubmit}>
+          Submit
+        </button>
+      </div>
+
+      <div className="button-container">
+        <button className="back-button" onClick={() => navigate("/")}>
+          Back to Home
+        </button>
       </div>
     </div>
   );
