@@ -1,0 +1,74 @@
+.food-bank-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.zip-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff9800;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background: #e68900;
+}
+
+.food-bank-list {
+  list-style: none;
+  padding: 0;
+}
+
+.food-bank {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-bank h3 {
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.home-button {
+  background-color: #be2c45;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-button:hover {
+  background-color: #aa0000;
+}
