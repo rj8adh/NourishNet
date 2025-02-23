@@ -86,7 +86,7 @@ const FoodBankLocator = () => {
       ) : (
         <p>
           {Array.isArray(foodBanks)
-            ? "No food banks found for this zip code."
+            ? "Please enter a zip code to search."
             : "Please enter a zip code to search."}
         </p>
       )}

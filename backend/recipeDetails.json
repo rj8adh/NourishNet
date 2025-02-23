@@ -5,57 +5,19 @@
             "steps": [
                 {
                     "number": 1,
-                    "step": "Combine all seasonings in a small bowl, reserving half of the rosemary. Baste the chicken with unsalted butter and olive oil and then cover with seasonings.",
+                    "step": "Marinate chicken with soy, sesame oil and rice wine. At least for 6 hours, although overnight is best.Take the chill off the meat.",
                     "ingredients": [
                         {
-                            "id": 1145,
-                            "name": "unsalted butter",
-                            "localizedName": "unsalted butter",
-                            "image": "butter-sliced.jpg"
+                            "id": 4058,
+                            "name": "sesame oil",
+                            "localizedName": "sesame oil",
+                            "image": "sesame-oil.png"
                         },
                         {
-                            "id": 1042027,
-                            "name": "seasoning",
-                            "localizedName": "seasoning",
-                            "image": "seasoning.png"
-                        },
-                        {
-                            "id": 4053,
-                            "name": "olive oil",
-                            "localizedName": "olive oil",
-                            "image": "olive-oil.jpg"
-                        },
-                        {
-                            "id": 2036,
-                            "name": "rosemary",
-                            "localizedName": "rosemary",
-                            "image": "rosemary.jpg"
-                        },
-                        {
-                            "id": 0,
-                            "name": "chicken",
-                            "localizedName": "chicken",
-                            "image": "whole-chicken.jpg"
-                        }
-                    ],
-                    "equipment": [
-                        {
-                            "id": 404783,
-                            "name": "bowl",
-                            "localizedName": "bowl",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
-                        }
-                    ]
-                },
-                {
-                    "number": 2,
-                    "step": "Add half of the onion, lemons, and rosemary to the inner cavity of the chicken.",
-                    "ingredients": [
-                        {
-                            "id": 2036,
-                            "name": "rosemary",
-                            "localizedName": "rosemary",
-                            "image": "rosemary.jpg"
+                            "id": 43479,
+                            "name": "rice wine",
+                            "localizedName": "rice wine",
+                            "image": "vinegar-(white).jpg"
                         },
                         {
                             "id": 0,
@@ -64,106 +26,106 @@
                             "image": "whole-chicken.jpg"
                         },
                         {
-                            "id": 9150,
-                            "name": "lemon",
-                            "localizedName": "lemon",
-                            "image": "lemon.png"
-                        },
-                        {
-                            "id": 11282,
-                            "name": "onion",
-                            "localizedName": "onion",
-                            "image": "brown-onion.png"
-                        }
-                    ],
-                    "equipment": []
-                },
-                {
-                    "number": 3,
-                    "step": "Roll up three small lemon-sized balls of foil and place in the bottom of the slow cooker.",
-                    "ingredients": [
-                        {
-                            "id": 9150,
-                            "name": "lemon",
-                            "localizedName": "lemon",
-                            "image": "lemon.png"
-                        },
-                        {
-                            "id": 0,
-                            "name": "roll",
-                            "localizedName": "roll",
-                            "image": "dinner-yeast-rolls.jpg"
-                        }
-                    ],
-                    "equipment": [
-                        {
-                            "id": 404718,
-                            "name": "slow cooker",
-                            "localizedName": "slow cooker",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
-                        },
-                        {
-                            "id": 404765,
-                            "name": "aluminum foil",
-                            "localizedName": "aluminum foil",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/aluminum-foil.png"
-                        }
-                    ]
-                },
-                {
-                    "number": 4,
-                    "step": "Place half of lemons and onion with water into the bottom of the slow cooker.",
-                    "ingredients": [
-                        {
-                            "id": 9150,
-                            "name": "lemon",
-                            "localizedName": "lemon",
-                            "image": "lemon.png"
-                        },
-                        {
-                            "id": 11282,
-                            "name": "onion",
-                            "localizedName": "onion",
-                            "image": "brown-onion.png"
-                        },
-                        {
-                            "id": 14412,
-                            "name": "water",
-                            "localizedName": "water",
-                            "image": "water.png"
-                        }
-                    ],
-                    "equipment": [
-                        {
-                            "id": 404718,
-                            "name": "slow cooker",
-                            "localizedName": "slow cooker",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg"
-                        }
-                    ]
-                },
-                {
-                    "number": 5,
-                    "step": "Add remaining rosemary to the top of the chicken.Cover and cook on low for 7-8 hours, or high for 4-5 hours.",
-                    "ingredients": [
-                        {
-                            "id": 2036,
-                            "name": "rosemary",
-                            "localizedName": "rosemary",
-                            "image": "rosemary.jpg"
-                        },
-                        {
-                            "id": 0,
-                            "name": "chicken",
-                            "localizedName": "chicken",
+                            "id": 1065062,
+                            "name": "meat",
+                            "localizedName": "meat",
                             "image": "whole-chicken.jpg"
                         }
                     ],
                     "equipment": [],
                     "length": {
-                        "number": 780,
+                        "number": 360,
                         "unit": "minutes"
                     }
+                },
+                {
+                    "number": 2,
+                    "step": "Heat up some sesame oil in a wok or claypot until it is sizzling hot.Throw in garlic, ginger and spring onions. Fry briefly till fragrant.",
+                    "ingredients": [
+                        {
+                            "id": 11291,
+                            "name": "spring onions",
+                            "localizedName": "spring onions",
+                            "image": "spring-onions.jpg"
+                        },
+                        {
+                            "id": 4058,
+                            "name": "sesame oil",
+                            "localizedName": "sesame oil",
+                            "image": "sesame-oil.png"
+                        },
+                        {
+                            "id": 11215,
+                            "name": "garlic",
+                            "localizedName": "garlic",
+                            "image": "garlic.png"
+                        },
+                        {
+                            "id": 11216,
+                            "name": "ginger",
+                            "localizedName": "ginger",
+                            "image": "ginger.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404666,
+                            "name": "wok",
+                            "localizedName": "wok",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/wok.png"
+                        }
+                    ]
+                },
+                {
+                    "number": 3,
+                    "step": "Add in chicken and sear.Keep stir-frying.",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 4,
+                    "step": "Pour in the marinade liquid and the sugar. Continue to cook on medium.Once you have a rolling boil, cover the wok/claypot and let it simmer over a small flame, until all the liquid has disappeared and the chicken is on the cusp of burning.There should hardly be any gravy left. The chicken should be caramelised (charred at parts, even) and sizzling when served.",
+                    "ingredients": [
+                        {
+                            "id": 0,
+                            "name": "marinade",
+                            "localizedName": "marinade",
+                            "image": "seasoning.png"
+                        },
+                        {
+                            "id": 0,
+                            "name": "chicken",
+                            "localizedName": "chicken",
+                            "image": "whole-chicken.jpg"
+                        },
+                        {
+                            "id": 6997,
+                            "name": "gravy",
+                            "localizedName": "gravy",
+                            "image": "gravy.jpg"
+                        },
+                        {
+                            "id": 19335,
+                            "name": "sugar",
+                            "localizedName": "sugar",
+                            "image": "sugar-in-bowl.png"
+                        }
+                    ],
+                    "equipment": [
+                        {
+                            "id": 404666,
+                            "name": "wok",
+                            "localizedName": "wok",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/wok.png"
+                        }
+                    ]
                 }
             ]
         }
@@ -174,80 +136,28 @@
             "steps": [
                 {
                     "number": 1,
-                    "step": "For the brine, combine the water, salt, sugar, half of the dried herbs and bay leaves into a large saucepan.  Bring the mixture to a boil, stirring to dissolve the salt and sugar.  Reduce to heat to low and simmer for 10 min so the flavors of the herbs can be drawn out.",
+                    "step": "Place all ingredients in a food processor & mix for 30 seconds. That\u2019s it! Spoon over pasta & enjoy!\u00a0\u00a0",
                     "ingredients": [
                         {
-                            "id": 1022042,
-                            "name": "dried herbs",
-                            "localizedName": "dried herbs",
-                            "image": "dried-herbs.png"
-                        },
-                        {
-                            "id": 2004,
-                            "name": "bay leaves",
-                            "localizedName": "bay leaves",
-                            "image": "bay-leaves.jpg"
-                        },
-                        {
-                            "id": 93798,
-                            "name": "brine",
-                            "localizedName": "brine",
-                            "image": ""
-                        },
-                        {
-                            "id": 1002044,
-                            "name": "herbs",
-                            "localizedName": "herbs",
-                            "image": "mixed-fresh-herbs.jpg"
-                        },
-                        {
-                            "id": 19335,
-                            "name": "sugar",
-                            "localizedName": "sugar",
-                            "image": "sugar-in-bowl.png"
-                        },
-                        {
-                            "id": 14412,
-                            "name": "water",
-                            "localizedName": "water",
-                            "image": "water.png"
-                        },
-                        {
-                            "id": 2047,
-                            "name": "salt",
-                            "localizedName": "salt",
-                            "image": "salt.jpg"
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
                         }
                     ],
                     "equipment": [
                         {
-                            "id": 404669,
-                            "name": "sauce pan",
-                            "localizedName": "sauce pan",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg"
+                            "id": 404771,
+                            "name": "food processor",
+                            "localizedName": "food processor",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/food-processor.png"
                         }
-                    ],
-                    "length": {
-                        "number": 10,
-                        "unit": "minutes"
-                    }
+                    ]
                 },
                 {
                     "number": 2,
-                    "step": "Pour the brine into a deep set large bowl and cool it down with your ice water.  Set aside.Clean the chicken by rinsing out the cavity and outer skin and place on a clean surface.  Be sure not to contaminate any vegetables or other ingredients, because no one is a fan of salmonella!",
+                    "step": "And try this pesto over chicken, caprese salad, bruschetta, homemade bread, fish, pizza, eggs, or anything else! Be creative!",
                     "ingredients": [
-                        {
-                            "id": 11583,
-                            "name": "vegetable",
-                            "localizedName": "vegetable",
-                            "image": "mixed-vegetables.png"
-                        },
-                        {
-                            "id": 14412,
-                            "name": "water",
-                            "localizedName": "water",
-                            "image": "water.png"
-                        },
                         {
                             "id": 0,
                             "name": "chicken",
@@ -255,185 +165,234 @@
                             "image": "whole-chicken.jpg"
                         },
                         {
-                            "id": 93798,
-                            "name": "brine",
-                            "localizedName": "brine",
-                            "image": ""
+                            "id": 18064,
+                            "name": "bread",
+                            "localizedName": "bread",
+                            "image": "white-bread.jpg"
+                        },
+                        {
+                            "id": 93698,
+                            "name": "pesto",
+                            "localizedName": "pesto",
+                            "image": "basil-pesto.png"
+                        },
+                        {
+                            "id": 1123,
+                            "name": "egg",
+                            "localizedName": "egg",
+                            "image": "egg.png"
+                        },
+                        {
+                            "id": 10115261,
+                            "name": "fish",
+                            "localizedName": "fish",
+                            "image": "fish-fillet.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 3,
+                    "step": "(Photo by Viana Boenzli)",
+                    "ingredients": [],
+                    "equipment": []
+                }
+            ]
+        },
+        {
+            "name": "Love pasta? Check out more of our pasta recipes now",
+            "steps": [
+                {
+                    "number": 1,
+                    "step": "How to Make Homemade Pasta",
+                    "ingredients": [
+                        {
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 2,
+                    "step": "Delicious One Pan Pasta Made From The Essential Pantry",
+                    "ingredients": [
+                        {
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
                         }
                     ],
                     "equipment": [
                         {
-                            "id": 404783,
-                            "name": "bowl",
-                            "localizedName": "bowl",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg"
+                            "id": 404645,
+                            "name": "frying pan",
+                            "localizedName": "frying pan",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
                         }
                     ]
                 },
                 {
                     "number": 3,
-                    "step": "Place the chicken in the brine,  make sure it is completely immersed in the brine.  Cover and allow to marinate for at least an hour and up to 6 hours.Preheat the oven to 375F.",
+                    "step": "One Pan Pasta, Deliciousness Made from Your Pantry and Two Fresh Ingredients",
                     "ingredients": [
                         {
-                            "id": 0,
-                            "name": "chicken",
-                            "localizedName": "chicken",
-                            "image": "whole-chicken.jpg"
-                        },
-                        {
-                            "id": 93798,
-                            "name": "brine",
-                            "localizedName": "brine",
-                            "image": ""
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
                         }
                     ],
                     "equipment": [
                         {
-                            "id": 404784,
-                            "name": "oven",
-                            "localizedName": "oven",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg",
-                            "temperature": {
-                                "number": 375.0,
-                                "unit": "Fahrenheit"
-                            }
-                        }
-                    ],
-                    "length": {
-                        "number": 360,
-                        "unit": "minutes"
-                    }
-                },
-                {
-                    "number": 4,
-                    "step": "Remove the chicken from the brine and place on a clean surface.  Pat the chicken dry with a paper towel as shown.  Separate the skin from the flesh, you can do this by carefully inserting your fingers underneath the skin and gently pull up to create a space or pocket.  Take the butter and rub it underneath the skin and flesh  this will make your chicken moist and tender while accentuating the flavor of the herbs in the meat.  Coat the skin with te remaining herbs and place in a roasting pan, if more herbs are needed just add more.",
-                    "ingredients": [
-                        {
-                            "id": 0,
-                            "name": "chicken",
-                            "localizedName": "chicken",
-                            "image": "whole-chicken.jpg"
-                        },
-                        {
-                            "id": 1001,
-                            "name": "butter",
-                            "localizedName": "butter",
-                            "image": "butter-sliced.jpg"
-                        },
-                        {
-                            "id": 93798,
-                            "name": "brine",
-                            "localizedName": "brine",
-                            "image": ""
-                        },
-                        {
-                            "id": 1002044,
-                            "name": "herbs",
-                            "localizedName": "herbs",
-                            "image": "mixed-fresh-herbs.jpg"
-                        },
-                        {
-                            "id": 1065062,
-                            "name": "meat",
-                            "localizedName": "meat",
-                            "image": "whole-chicken.jpg"
-                        },
-                        {
-                            "id": 1012034,
-                            "name": "dry seasoning rub",
-                            "localizedName": "dry seasoning rub",
-                            "image": "seasoning.png"
-                        }
-                    ],
-                    "equipment": [
-                        {
-                            "id": 404629,
-                            "name": "roasting pan",
-                            "localizedName": "roasting pan",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/roasting-pan.jpg"
-                        },
-                        {
-                            "id": 405895,
-                            "name": "paper towels",
-                            "localizedName": "paper towels",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/paper-towels.jpg"
+                            "id": 404645,
+                            "name": "frying pan",
+                            "localizedName": "frying pan",
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png"
                         }
                     ]
                 },
                 {
-                    "number": 5,
-                    "step": "Bake the chicken for about 1 hour and 10 minutes, basting the chicken half way through and again during the last 10 minutes.  To test the doneness of your chicken, insert a meat thermometer into the thickest part of the breast, it should read 165F.  If you do not own a thermometer, cut into the chicken and if it releases pink juices it is undercooked.  Your chicken is done when the juices are a clear yellow.",
+                    "number": 4,
+                    "step": "Snappy Shrimp, Hot Pepper Flakes, and Garlic Breath",
                     "ingredients": [
                         {
-                            "id": 0,
-                            "name": "chicken",
-                            "localizedName": "chicken",
-                            "image": "whole-chicken.jpg"
+                            "id": 11819,
+                            "name": "chili pepper",
+                            "localizedName": "chili pepper",
+                            "image": "red-chili.jpg"
                         },
                         {
-                            "id": 1065062,
-                            "name": "meat",
-                            "localizedName": "meat",
-                            "image": "whole-chicken.jpg"
+                            "id": 11215,
+                            "name": "garlic",
+                            "localizedName": "garlic",
+                            "image": "garlic.png"
+                        },
+                        {
+                            "id": 15270,
+                            "name": "shrimp",
+                            "localizedName": "shrimp",
+                            "image": "shrimp.png"
                         }
                     ],
-                    "equipment": [
+                    "equipment": []
+                },
+                {
+                    "number": 5,
+                    "step": "Butternut Squash Pasta",
+                    "ingredients": [
                         {
-                            "id": 404789,
-                            "name": "kitchen thermometer",
-                            "localizedName": "kitchen thermometer",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/food-thermometer.jpg"
+                            "id": 11485,
+                            "name": "butternut squash",
+                            "localizedName": "butternut squash",
+                            "image": "butternut-squash.jpg"
                         },
+                        {
+                            "id": 20420,
+                            "name": "pasta",
+                            "localizedName": "pasta",
+                            "image": "https://spoonacular.com/cdn/ingredients_100x100/fusilli.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 6,
+                    "step": "Shrimp Fettuccine Alfredo",
+                    "ingredients": [
+                        {
+                            "id": 10020409,
+                            "name": "fettuccine",
+                            "localizedName": "fettuccine",
+                            "image": "egg-noodles.jpg"
+                        },
+                        {
+                            "id": 15270,
+                            "name": "shrimp",
+                            "localizedName": "shrimp",
+                            "image": "shrimp.png"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 7,
+                    "step": "Homemade Black Squid Ink Pasta",
+                    "ingredients": [
+                        {
+                            "id": 99074,
+                            "name": "squid ink pasta",
+                            "localizedName": "squid ink pasta",
+                            "image": "squid-ink-pasta.jpg"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 8,
+                    "step": "Super Easy Oven",
+                    "ingredients": [],
+                    "equipment": [
                         {
                             "id": 404784,
                             "name": "oven",
                             "localizedName": "oven",
-                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg",
-                            "temperature": {
-                                "number": 165.0,
-                                "unit": "Fahrenheit"
-                            }
+                            "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg"
                         }
-                    ],
-                    "length": {
-                        "number": 80,
-                        "unit": "minutes"
-                    }
+                    ]
                 },
                 {
-                    "number": 6,
-                    "step": "Transfer the chicken to a carving board and allow it to rest for 10-20 minutes.  This allows the juices to settle into the meat so it does not end up running out all over the board.  To serve, begin carving the legs it is easiest to cut at the joints.",
+                    "number": 9,
+                    "step": "Baked Cod",
                     "ingredients": [
                         {
-                            "id": 0,
-                            "name": "chicken",
-                            "localizedName": "chicken",
-                            "image": "whole-chicken.jpg"
-                        },
-                        {
-                            "id": 1065062,
-                            "name": "meat",
-                            "localizedName": "meat",
-                            "image": "whole-chicken.jpg"
+                            "id": 15015,
+                            "name": "cod",
+                            "localizedName": "cod",
+                            "image": "cod-fillet.jpg"
                         }
                     ],
-                    "equipment": [],
-                    "length": {
-                        "number": 20,
-                        "unit": "minutes"
-                    }
+                    "equipment": []
                 },
                 {
-                    "number": 7,
-                    "step": "Remove the wings and then the legs and thighs the same way.  To carve each breast, start at the breabone and cut downward and parallel to the rib cage.  Then make a deep horizontal cut right above the thigh and wing joints.  You can choose to serve the breasts whole or cut them into thin slices.",
+                    "number": 10,
+                    "step": "How are you going to use your pesto?",
                     "ingredients": [
                         {
-                            "id": 5100,
-                            "name": "chicken wings",
-                            "localizedName": "chicken wings",
-                            "image": "chicken-wings.png"
+                            "id": 93698,
+                            "name": "pesto",
+                            "localizedName": "pesto",
+                            "image": "basil-pesto.png"
                         }
                     ],
+                    "equipment": []
+                },
+                {
+                    "number": 11,
+                    "step": "Did you make this Pesto recipe?",
+                    "ingredients": [
+                        {
+                            "id": 93698,
+                            "name": "pesto",
+                            "localizedName": "pesto",
+                            "image": "basil-pesto.png"
+                        }
+                    ],
+                    "equipment": []
+                },
+                {
+                    "number": 12,
+                    "step": "Let us know in the comments below!",
+                    "ingredients": [],
+                    "equipment": []
+                },
+                {
+                    "number": 13,
+                    "step": "Content and photographs are copyright protected. Sharing of this recipe is both encouraged and appreciated. Copying and/or pasting full recipes to any social media is strictly prohibited.",
+                    "ingredients": [],
                     "equipment": []
                 }
             ]
