@@ -4,6 +4,9 @@ import requests
 from dotenv import load_dotenv
 import os
 import json
+from fastapi import FastAPI
+
+app = FastAPI()
 
 load_dotenv()
 
@@ -22,7 +25,7 @@ def api_request(url: str):
     return [response][0]
 
 
-# Get all recipes with the given ingredients
+# Get all recipes with the given ingredients and update json file
 def get_recipes(ingredients: list = [], loadIngredients: bool = False):
     # Convert list to comma-separated string
     if not loadIngredients:
@@ -60,12 +63,6 @@ def get_recipes(ingredients: list = [], loadIngredients: bool = False):
         f.close()
 
     # print(recipes)
-
-    for recipe in recipes:
-        print(f"\nMISSING INGREDIENTS FOR {recipe['title']}:\n")
-
-        for ingredient in recipe['missedIngredients']:
-            print(ingredient['original'])
     
     return recipes
 
@@ -106,7 +103,9 @@ def get_equip_for_recip(recipe: list):
     neededEquipment = set()
 
     # Looping through each step and getting needed equipment
+    print(recipe)
     for info in recipe:
+        print(f"\n\nINFO\n\n{info}")
         steps = info['steps']
         for step in steps:
             for equipment in step['equipment']:
@@ -114,7 +113,7 @@ def get_equip_for_recip(recipe: list):
                 neededEquipment.add(equipment['name'])
 
     # Converting a set to a list seperated by commas (you could just use the list() function but I wanted to flex my list comprehensions)
-    return ", ".join([equipment for equipment in neededEquipment]).strip(", ")
+    return ", ".join([equipment for equipment in neededEquipment])
 
 
 def get_steps(recipe: list):
@@ -131,7 +130,7 @@ def get_steps(recipe: list):
     stepsString = stepsString.strip()
 
     return stepsString
-    
+
 
 # Get and format user input
 # user_ingredients = input("Enter ingredients (comma-separated): ").lower().split(",")
@@ -139,20 +138,88 @@ def get_steps(recipe: list):
 
 # Get recipes
 # recipes = get_recipes(user_ingredients)
-recipes = get_recipes(loadIngredients=True)
+def testFuncInConsole():
+    recipes = get_recipes(loadIngredients=True)
 
-with open("recipeDetails.json") as f:
-    recipeDetails = json.load(f)
-f.close()
+    with open("recipeDetails.json") as f:
+        recipeDetails = json.load(f)
+    f.close()
 
-# recipeDetails = get_recipe_details(recipe) # Commented out so I don't waste api tokens
+    # recipeDetails = get_recipe_details(recipe) # Commented out so I don't waste api tokens
 
-for recipeIndex, recipe in enumerate(recipeDetails):
-    print(f"\n\n{recipes[recipeIndex]['title']} Instructions:\n\n")
-    
-    print(get_steps(recipe))
+    for recipeIndex, recipe in enumerate(recipeDetails):
+        print(f"\n\n{recipes[recipeIndex]['title']} Instructions:\n\n")
+        
+        print(get_steps(recipe))
 
-    neededEquipment = get_equip_for_recip(recipe)
+        neededEquipment = get_equip_for_recip(recipe)
 
-    print(f"\n\nNEEDED EQUIPMENT FOR RECIPE:\n\n")
-    print(neededEquipment)
+        print(f"\n\nNEEDED EQUIPMENT FOR RECIPE:\n\n")
+        print(neededEquipment)
+
+@app.get("/")
+def testFuncWithStoredFiles():
+
+    testOutput = ""
+
+    recipes = get_recipes(loadIngredients=True)
+
+    with open("recipeDetails.json") as f:
+        recipeDetails = json.load(f)
+    f.close()
+
+    # recipeDetails = get_recipe_details(recipe) # Commented out so I don't waste api tokens
+
+    for recipeIndex, recipe in enumerate(recipeDetails):
+        testOutput += f"\n\n{recipes[recipeIndex]['title']} Instructions:\n\n"
+        
+        testOutput += get_steps(recipe)
+
+        neededEquipment = get_equip_for_recip(recipe)
+
+        testOutput += f"\n\nNEEDED EQUIPMENT FOR RECIPE:\n\n"
+        testOutput += neededEquipment
+
+    return testOutput.strip("\n\n")
+
+
+@app.post("/giveIngredients")
+def giveIngredients(ingredients: str):
+    foodItems = ingredients.split("&")
+    recipeData = get_recipes(foodItems)
+    return recipeData
+
+
+@app.get("/getNecessaryEquipment")
+def get_necessary_equipment():
+    finalOutput = []
+    with open("recipes.json") as f:
+        recipesInfo = json.load(f)
+    f.close()
+
+    for recip in recipesInfo:
+        finalOutput.append(get_equip_for_recip(recip))
+
+    return finalOutput
+
+
+# Getting missing ingredients
+@app.get("/getMissingIngredients")
+def get_missing_ingredients():
+
+    finalOutput = []
+
+    with open("recipes.json") as f:
+        recipesInfo = json.load(f)
+    f.close()
+
+    for recipe in recipesInfo:
+        neededIngredients = []
+        # print(f"\nMISSING INGREDIENTS FOR {recipe['title']}:\n")
+
+        for ingredient in recipe['missedIngredients']:
+            neededIngredients.append(ingredient['original'])
+
+        finalOutput.append(neededIngredients)
+
+    return finalOutput
