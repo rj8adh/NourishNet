@@ -6,8 +6,23 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Dict, Any
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware  # Import CORS
 
 app = FastAPI()
+
+# Configure CORS
+origins = [
+    "http://localhost:5173",  # Allow your React app's origin
+    # Add other origins as needed
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 load_dotenv()
 
@@ -151,3 +166,81 @@ def get_recipe_detail_route(recipe_id: int):
             return all_details[index]
 
     raise HTTPException(status_code=404, detail="recipe id not found.")
+
+
+# Google Maps Stuff
+
+GOOGLE_API_KEY = os.getenv("VITE_GOOGLE_API_KEY")
+
+class GeocodeResponse(BaseModel):
+    results: List[dict]
+    status: str
+
+class PlacesResponse(BaseModel):
+    results: List[dict]
+    status: str
+
+class PlaceDetailsResponse(BaseModel):
+    result: dict
+    status: str
+
+@app.get("/foodbanks/{zip_code}")
+async def get_food_banks(zip_code: str):
+    """
+    Retrieves food banks near a given zip code.
+    """ 
+    try:
+        # 1. Geocoding
+        geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={zip_code}&key={GOOGLE_API_KEY}"
+        geo_response = requests.get(geocode_url)
+        geo_response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
+        geo_data = GeocodeResponse(**geo_response.json())
+
+        print(geo_data)
+
+        if geo_data.status != "OK" or not geo_data.results:
+            raise HTTPException(status_code=400, detail="Invalid zip code or no results found.")
+
+        location = geo_data.results[0]["geometry"]["location"]
+        lat, lng = location["lat"], location["lng"]
+
+        # 2. Nearby Search
+        places_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={lat},{lng}&radius=50000&type=charity&key={GOOGLE_API_KEY}"
+        places_response = requests.get(places_url)
+        places_response.raise_for_status()
+        places_data = PlacesResponse(**places_response.json())
+
+        print("DATA", places_data)
+
+        if places_data.status != "OK" or not places_data.results:
+            raise HTTPException(status_code=404, detail="No food banks found in your area.")
+
+        places = places_data.results[:5]
+
+        print(places)
+
+        # 3. Place Details
+        food_banks = []
+        for place in places:
+            details_url = f"https://maps.googleapis.com/maps/api/place/details/json?place_id={place['place_id']}&fields=name,formatted_address,formatted_phone_number,website&key={GOOGLE_API_KEY}"
+            details_response = requests.get(details_url)
+            details_response.raise_for_status()
+            details_data = PlaceDetailsResponse(**details_response.json())
+
+            if details_data.status != "OK" or not details_data.result:
+                continue # skip this place, but dont fail the entire request.
+            food_banks.append(details_data.result)
+
+        return food_banks
+
+    except requests.exceptions.RequestException as e:
+        raise HTTPException(status_code=500, detail=f"Network error: {str(e)}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"An unexpected error occurred: {str(e)}")
+    
+@app.get("/geocode/{zip_code}")
+async def geocode(zip_code: str):
+    geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={zip_code}&key={GOOGLE_API_KEY}"
+    geo_response = requests.get(geocode_url)
+    geo_response.raise_for_status()
+    return geo_response.json()
