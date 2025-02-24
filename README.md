@@ -1,7 +1,7 @@
 # NourishNet
 Helping the underprivileged access nutrition support through the power of AI
 
-## Available Scripts
+## How To Run ReactFramework (MUST DOWNLOAD REACTFRAMEWORK BRANCH TO SEE WEBPAGE)
 
 After downloading the ReactFramework branch, you can run the following commands to run the website:
 
